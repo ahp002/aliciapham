@@ -3,56 +3,52 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="view-transition" content="same-origin">
-
     <title>Alicia Pham's Personal Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="transition.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="split top">
-            <nav>
-                <a id="visi" class="visit" href="index.html">Home</a>
-                <a id="visp" href="projects.html">Projects</a>
-                <a id="visr" href="resume.html">Resume</a>
-                <a id="visc" href="contact.html">Contact Me</a>
-            </nav>
-                <h1>
-                <span style="color: lightslategray">HI!
-                    <br> I&#39;M <span style="color: white">ALICIA PHAM</span><br>
-                    A MATHEMATICS-COMPUTER SCIENCE STUDENT</span>
-                </h1>
-                <img class="me" src="imgs/Pic_of_Me.jpeg" alt="picture of me wearing a blue sweater" width="300" height="400">
-        </div>
-        <div class="split bottom"></div>
-        <button id="mode" type="button">&#9789;</button>
-    </header>
-    <main>
-        <h2>About Me</h2>
-        <div class="about-me-container">
-        <p>
-            Alicia Pham is a 4th-year Mathematics-Computer Science 
-        student attending University of California, San Diego. She 
-        has a dog named Prince that just turned 1 year old! On her free time she loves to try 
-        new and different kinds of food with her friends and family.
-        </p>
-        <p>
-            Her hobbies include and are not limited to: reading webcomics, playing games, and trying to 
-            incoporate her interests into her coding projects.
-        </p>
-        </div>
-        <picture>
-        <img class="prince" src="imgs/Prince.jpg" alt="a dog wearing a blue birthday hat and a plate a steak on the table" width="270" height="270">
-        <img class="me-2" src="imgs/me_flushed.jpeg" alt="a girl smiling wearing a blue shirt with flushed cheeks" width="270" height="270">
-        <img class="prince-2" src="imgs/prince_cute.jpeg" alt="a dog wearing a yellow shirt laying down on a pillow" width="270" height="270">
-        </picture>
-    </main>
-    <footer>
-        <hr>
-        <p>Made with &hearts; by Alicia Pham</p>
-    </footer>
-</body>
+        <header>
+            <div class="top">
+                <nav>
+                    <a class="visit" href="index.html">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="contact.html">Contact Me</a>
+                </nav>
+                    <h1 id="typed-text" style="color: white"></h1>
+                    <img class="me" src="imgs/Pic_of_Me.jpeg" alt="picture of me wearing a blue sweater" width="300" height="400" loading="lazy">
+            </div>
+            <div class="bottom"></div>
+        </header>
+        <main>
+            <h2>About Me</h2>
+            <div class="about-me-container">
+            <p>
+                Alicia Pham is a 4th-year Mathematics-Computer Science 
+            student attending University of California, San Diego. She 
+            has a dog named Prince that just turned 1 year old! On her free time she loves to try 
+            new and different kinds of food with her friends and family.
+            </p>
+            <p>
+                Her hobbies include and are not limited to: reading webcomics, playing games, and trying to 
+                incoporate her interests into her coding projects.
+            </p>
+            </div>
+            <picture>
+            <img class="prince" src="imgs/Prince.jpg" alt="a dog wearing a blue birthday hat and a plate a steak on the table" width="270" height="270" loading="lazy">
+            <img class="me-2" src="imgs/me_flushed.jpeg" alt="a girl smiling wearing a blue shirt with flushed cheeks" width="270" height="270" loading="lazy">
+            <img class="prince-2" src="imgs/prince_cute.jpeg" alt="a dog wearing a yellow shirt laying down on a pillow" width="270" height="270" loading="lazy">
+            </picture>
+            <button onclick="scrollUp()" id="topBtn">&#x21E7;</button>
+        </main>
+        <footer>
+            <hr>
+            <p>Made with &hearts; by Alicia Pham</p>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+
+
 </html>

@@ -3,13 +3,18 @@ html, body {
     flex-direction: column;
     min-height: 100vh;    
     margin: 0;
-    padding: 0;
-    overflow-x: hidden !important;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+main {
+    flex: 1;
 }
 
 :root {
     --primary-color: #003049; 
     --secondary-color: #fdf0d5; 
+    --tertiary-color: #011f30;
     --content-color: #8B8C89;
     --title-color: #274C77;
     --container-color: #E7ECEF;
@@ -33,15 +38,17 @@ html, body {
 .bottom {
     left: 0;
     right: 0;
-    top: 99vh;
-    height: 101vh;
-    background-color: var(--secondary-color);
+    top: 90vh;
+    height: 100vh;
+    background-color: var(--tertiary-color);
     position: absolute;
     z-index: -2;
 }
 
 .me {
     border-radius: 50%;
+    position: absolute;
+    margin-left: 60%;
 }
 
 h1 {
@@ -50,15 +57,15 @@ h1 {
     font-size: 35px;
     font-family: var(--primary-font, sans-serif);
     display: flex;
+    margin-right: 35%;
     flex-wrap: wrap;
-    /* text-shadow: 0px 2px 5px; */
 }
 
 h2 {
     position: absolute;
     color: var(--title-color);
     top: 121%;
-    left: 58%;
+    left: 56%;
     font-family: var(--primary-font, sans-serif);
 }
 
@@ -70,9 +77,9 @@ h2 {
     font-family: var(--secondary-font, sans-serif);
     padding: 40px 20px;
     /* area outside of box, position of box on page */
-    margin: 11rem 50rem 20rem;
+    margin: 13rem 65rem 20rem;
     border-radius: 10px;
-    border: 6px solid var(--primary-color);
+    border: 6px solid var(--title-color);
 }
 
 .prince {
@@ -104,7 +111,8 @@ footer {
     /* top: 193dvh; */
     width: 100%;
     /* height: 2rem; */
-    background-color: var(--secondary-color);
+    min-height: 50px;
+    background-color: var(--tertiary-color);
     font-family: var(--primary-font, sans-serif);
     color: var(--mix-color);
 }
@@ -159,3 +167,24 @@ nav a {
     color: white;
 }
 
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 9999;
+    border: none;
+    outline: none;
+    background-color: darkgray;
+    cursor: pointer;
+    /* space around arrow */
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 17px;
+
+    &:hover {
+        background-color: lightgray;
+        transition: background-color 0.6s ease;
+    }
+
+}

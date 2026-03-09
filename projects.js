@@ -19,7 +19,7 @@ class ProjectCard extends HTMLElement {
             <style>${cardCss()}</style>
             <div class ="pcard">
             <picture>
-            <img src ="${img}" alt="${alt}">
+            <img src ="${img}" alt="${alt}" loading="lazy" decoding="async">
             </picture>
             <hgroup>
                 <h3 class="title">${title}</h3>

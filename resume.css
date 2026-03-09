@@ -61,9 +61,9 @@ nav a {
 .resume {
     border: 1px solid white;
     border-radius: 4px;
-    position: absolute;
+    position: fixed;
     top: 100px;
-    left: 33%;
+    left: 35%;
 }
 
 .button {
@@ -92,6 +92,6 @@ nav a {
 
 footer {
     width: 100%;
-    color: var(--color);
+    color: var(--title-color);
     font-family: var(--primary-font, sans-serif);
 }
